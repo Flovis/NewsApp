@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Data from "./components/Data";
+import NavMenu from "./components/navMenu/NavMenu";
+import NewsCard from "./components/NewsCard";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    console.log();
+    return (
+        <div className="container mx-auto max-w-screen-xl">
+            <NavMenu />
+            <div className="py-4 lg:py-8">
+                <h1 className="text-xl text-center font-bold lg:text-2xl lg:text-left">
+                    Last info
+                </h1>
+                <Data />
+            </div>
+        </div>
+    );
 }
 
 export default App;
